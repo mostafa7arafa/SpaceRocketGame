@@ -34,7 +34,10 @@ To run this game, you need to have the following installed on your machine:
 6. Score points by successfully destroying asteroids before the time runs out.
 7. Press "F1" to restart the game and enjoy a new set of randomly generated asteroids.
 
-##Game in progress
+## Game in progress
+
+
+https://github.com/mostafa7arafa/SpaceRocketGame/assets/58299212/c018a1a7-2622-4558-9c00-b036c2d2c174
 
 
 ## Acknowledgments

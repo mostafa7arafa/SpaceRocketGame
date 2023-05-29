@@ -34,6 +34,9 @@ To run this game, you need to have the following installed on your machine:
 6. Score points by successfully destroying asteroids before the time runs out.
 7. Press "F1" to restart the game and enjoy a new set of randomly generated asteroids.
 
+##Game in progress
+
+
 ## Acknowledgments
 
 I would like to express my gratitude to the Computer Graphics course provided by Arab Academy for Science and Technology. Special thanks to Dr. Rasha Montaser, the course instructor, for her valuable teachings and guidance throughout the course. I would also like to acknowledge the assistance provided by Engineer Hoda Osama, the course assistant, for her support and contribution.

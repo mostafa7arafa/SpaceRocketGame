@@ -24,6 +24,7 @@ float elapsedTime = 0.0f;
 int remainingTime = 20;
 int laserColorIndex = 0;
 int score = 0;
+int delTime = 0;
 bool gameOver = false;
 
 void timer(int value);
@@ -118,9 +119,6 @@ void Laser() {
     glEnd();
 }
 
-
-
-
 void drawRocket() {
     // Draw the rocket with adjusted X position
     glColor3f(0.8, 0.6, 0.1);
@@ -192,7 +190,7 @@ void drawCircle(float x, float y, float radius, float r, float g, float b) {
 }
 
 void updateCircles() {
-    int currentTime = int(glutGet(GLUT_ELAPSED_TIME) / 1000.0f)%20; // Convert to seconds
+    int currentTime = int(glutGet(GLUT_ELAPSED_TIME) / 1000.0f) - delTime; // Convert to seconds
     elapsedTime = currentTime;
     remainingTime = 20 - currentTime;
 
@@ -282,7 +280,8 @@ void keyboard(unsigned char key, int x, int y) {
     if (key == 32) { // Spacebar key
         laserColorIndex = (laserColorIndex + 1) % 3; // Switch between 3 options (red, green, blue)
     }
-    if(key == 127) { // Delete key
+    if(key == 127 && elapsedTime >= 19.0f) { // Delete key
+        delTime = int(glutGet(GLUT_ELAPSED_TIME) / 1000.0f);
         elapsedTime = 0.0f;
         remainingTime = 20;
         laserColorIndex = 0;
